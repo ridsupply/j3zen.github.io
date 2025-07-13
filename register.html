@@ -213,13 +213,13 @@
                 
                 <div>
                     <label for="mainDepartment" class="block text-blue-800 text-sm font-semibold mb-2">
-                        กรม/สำนัก <span class="text-red-400">*</span>
+                        หน่วย <span class="text-red-400">*</span>
                     </label>
                     <select id="mainDepartment" name="mainDepartment" 
                             class="select-field w-full py-3 px-4 rounded-xl focus:outline-none font-medium" required>
-                        <option value="">เลือก กรม/สำนัก ของท่าน</option>
+                        <option value="">เลือก หน่วย ของท่าน</option>
                     </select>
-                    <div class="error-message" id="mainDepartmentError">กรุณาเลือกกรม/สำนัก</div>
+                    <div class="error-message" id="mainDepartmentError">กรุณาเลือกหน่วย</div>
                 </div>
                 
                 <div>
@@ -342,7 +342,7 @@
           
             // Validate main department
             if (!mainDepartment) {
-                showError('mainDepartment', 'mainDepartmentError', 'กรุณาเลือกหน่วยงาน สำนัก/กอง');
+                showError('mainDepartment', 'mainDepartmentError', 'กรุณาเลือกหน่วยงาน');
                 isValid = false;
             }
 
@@ -423,7 +423,7 @@
 
         function populateMainDepartments(departments) {
             const mainDeptSelect = document.getElementById('mainDepartment');
-            mainDeptSelect.innerHTML = '<option value="">เลือกหน่วยงาน สำนัก/กอง</option>';
+            mainDeptSelect.innerHTML = '<option value="">เลือกหน่วยงาน</option>';
             const uniqueMainDepts = [...new Set(departments.map(row => row.mainDepartment).filter(val => val))];
             uniqueMainDepts.forEach(dept => {
                 const option = document.createElement('option');
@@ -669,7 +669,7 @@
                                     contents: [
                                         {
                                             type: 'text',
-                                            text: 'สำนัก/กอง :',
+                                            text: 'หน่วยงาน :',
                                             size: 'sm',
                                             color: '#6b7280', // Gray for labels
                                             weight: 'bold',
