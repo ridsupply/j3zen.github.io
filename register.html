@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>คลินิกพัสดุ ชลประทาน</title>
+    <title>คลินิกพัสดุ บก.ทท.</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -151,10 +151,10 @@
                 <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-white shadow-lg flex items-center justify-center overflow-hidden">
 <!--                   https://drive.google.com/file/d/1PHooavPU4Ox-YkZylJQTU_eiPOPIQWjd/view?usp=drive_link -->
                     <img src="https://lh3.googleusercontent.com/d/1PHooavPU4Ox-YkZylJQTU_eiPOPIQWjd" 
-                         alt="คลินิกพัสดุ ชลประทาน" class="w-20 h-20 object-contain">
+                         alt="คลินิกพัสดุ บก.ทท." class="w-20 h-20 object-contain">
                 </div>
             </div>
-            <h1 class="text-2xl font-bold text-blue-800 mb-2">คลินิกพัสดุ ชลประทาน</h1>
+            <h1 class="text-2xl font-bold text-blue-800 mb-2">คลินิกพัสดุ บก.ทท.</h1>
             <p class="text-blue-600 text-sm">ลงทะเบียน</p>
         </div>
 
@@ -268,7 +268,7 @@
         
         <!-- Footer -->
         <div class="glass-effect p-4 text-center">
-            <p class="text-blue-600 text-xs">© 2025 คลินิกพัสดุ ชลประทาน</p>
+            <p class="text-blue-600 text-xs">© 2025 คลินิกพัสดุ บก.ทท.</p>
         </div>
     </div>
 
@@ -475,7 +475,7 @@
 
         async function sendToGoogleSheet(userId, firstName , lastName, mainDepartment, subDepartment, tel, email) {
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbzPl58YKz3dDzHDquumQfT2u5faDwf67kmxy1yT_TIzeMOa4rnWI_NtkjMeypDjCzc/exec', {
+                const response = await fetch('https://script.google.com/macros/s/AKfycbwY_W2tSAk49D-v8k59EkKb8UV-Se7enRWfaCGFxx8kprzyZAe-EtAnoig0v8NEuYx1/exec', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
@@ -771,7 +771,7 @@
                     contents: [
                         {
                             type: 'text',
-                            text: 'คลินิกพัสดุ ชลประทาน',
+                            text: 'คลินิกพัสดุ บก.ทท.',
                             size: 'xs',
                             color: '#6b7280',
                             align: 'center',
