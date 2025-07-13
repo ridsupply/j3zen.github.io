@@ -403,7 +403,7 @@
 
         async function fetchDepartments() {
             try {
-                const response = await fetch('https://script.google.com/macros/s/AKfycbxnrcqELJWyq7wnwlzmQjm5yXA34Ov5Sz8XbKIBCcMBrbIZfzNz14TTBFoZgqJnQ75S/exec?action=getDepartment');
+                const response = await fetch('https://script.google.com/macros/s/AKfycbwN9TR7Dba8O_NbnLo6z2I8g64TBdmDXeWrOhEKuqW2l8fcussHPCXYsOyOQE8We6hB/exec?action=getDepartment');
                 const data = await response.json();
                 if (data.departments) {
                     window.departmentData = data.departments; // Store data globally
